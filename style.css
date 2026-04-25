@@ -1,0 +1,221 @@
+
+.part1{
+    padding-top: 20px;
+    padding-bottom: 80px;
+    background-position: center top;
+    background-size: cover;
+    background-image: url("img/hero-bg.jpg");
+}
+
+.container-fluid>.navbar-brand{
+    color: #ffffff;
+    font-size: 35px;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+}
+.container-fluid>.navbar-brand:hover{
+    color: #ffffff;
+    cursor: pointer;   
+}
+.nav-item>a{
+    font-weight: 450;
+    color: #ffffff;
+}
+.nav-item>a:hover{
+    color: rgb(255, 255, 22);
+}
+.nav-item>.hm{
+    color: rgb(255, 255, 22);
+}
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+/* .nav-item>.hm:hover{
+    color: rgb(255, 255, 22);
+} */
+.nav-item{
+    margin-right: 14px;
+}
+.container{
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+.container>.head{
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+.head h1{
+    color: #ffffff;
+    font-size: 55px;
+    font-weight: 500;
+    font-family: "Dancing Script", cursive;
+}
+.text{
+    padding-top: 10px;
+}
+.text>p{
+    padding-bottom: 20px;
+    color: #ffffff;
+}
+
+.butt .order:hover{
+    color: #ffffff;
+}
+
+.butt{
+    padding: 0 20px;
+    border-radius: 20px;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+    background-color: #ffce63;
+}
+
+.butt:hover,
+.butt2:hover {
+    cursor: pointer;
+    background: #e8a920;
+}
+
+.butt2{ 
+    margin-top: 20px;
+    padding-top: 12px;
+    padding-bottom: 14px;
+    border-radius: 40px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 400;
+    border: none;
+    background-color: #ffce63;
+    transition: 0.4s;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.slide{
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 40px;
+}
+.carousel-inner{
+    padding-top: 20px;
+    padding-bottom: 21px;
+}
+.carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    justify-content: start;
+    margin: 0;
+}
+.carousel-indicators [data-bs-target] {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: gray;
+    border: none;
+    margin-right: 8px;
+}
+.carousel-indicators .active {
+    background-color: #ff4d4d; /* red highlight */
+    transform: scale(1.2);
+}
+
+.part2{
+    padding: 40px 10px;
+}
+.part2 .container{
+    padding-top: 50px;
+}
+.left img{
+    width: 180px;
+    height: 180px;
+    border: 4px solid #e8a920;
+    border-radius: 50%;
+}
+.cd{
+    gap: 20px;
+}
+.cd .c1{
+    color: white;
+    margin-left: 20xp;
+    background: rgb(22, 22, 35);
+}
+.right{
+    margin-top: 10px;
+    padding: 10px;
+    font-family: "Dancing Script", cursive;
+}
+@media (max-width:417px) {
+    .row .c1{
+        margin-left: 1px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+@media (max-width:417px) {
+    .row .c1 .butt2{
+        margin-left: 30px;
+    }
+}
+.container h1{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Dancing Script", cursive;
+}
+.image img{
+    width: 150px;
+    height: 150px;
+}
+.image{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #ededed;
+}
+.cd-content{
+    padding: 30px;
+    color: #ffffff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px; 
+    background: rgb(22, 22, 35);
+}
+.cart{
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background: #e8a920;
+}
+.row .crd{
+    margin-left: 28px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+.food-type .all{
+    padding: 10px 0px;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #ffffff;
+    background: rgb(22, 22, 35);
+}
+.food-type div{
+    margin: 5px;
+    padding: 10px 0px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+/* .crd:hover img{
+
+} */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    /* border: 1px solid red; */
+}
