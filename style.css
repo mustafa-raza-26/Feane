@@ -1,3 +1,7 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
 
 .part1{
     padding-top: 20px;
@@ -332,9 +336,40 @@ input[type="number"]::-webkit-inner-spin-button {
     color: #ffffff;
     background: rgb(22, 22, 35);
 }
-
-*{
-    padding: 0px;
-    margin: 0px;
-    /* border: 1px solid red; */
+.footer h2{
+    font-family: "Dancing Script", cursive;
+}
+.icon-down i{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-right: 10px;
+    font-size: 15px;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: rgb(22, 22, 35);
+    background: #ffffff;
+    cursor: pointer;
+}
+.icon-down .face{
+    padding-top: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+    margin-right: 10px;
+    font-size: 15px;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: rgb(22, 22, 35);
+    background: #ffffff;
+    cursor: pointer;
+}
+.icon-down i:hover{
+    color: #ffffff;
+    color: #ffce63;
+}
+.contact p span:hover{
+    cursor: pointer;
+    color: #ffce63;
 }
