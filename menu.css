@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+.menu_nav{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.menu-cont{
+    background: url(./img/hero-bg.jpg);
+}
+#home{
+    color: white;
+}
+#home:hover{
+    color: rgb(225, 225, 25);
+}
+#chicken:hover{
+    padding: 10px 0px;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #ffffff;
+    background: rgb(22, 22, 35);
+    transition: 0.4s;
+}
+#pizza:hover{
+    padding: 10px 0px;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #ffffff;
+    background: rgb(22, 22, 35);
+    transition: 0.4s;
+}
+#pasta:hover{
+    padding: 10px 0px;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #ffffff;
+    background: rgb(22, 22, 35);
+    transition: 0.4s;
+}
+#cookies:hover{
+    padding: 10px 0px;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #ffffff;
+    background: rgb(22, 22, 35);
+    transition: 0.4s;
+}

@@ -1,6 +1,6 @@
-// Carousal Btn
-const buttons = document.querySelectorAll('.custom-btn');
-  const carousel = document.getElementById('customCarousel');
+  // Carousal Btn
+let buttons = document.querySelectorAll('.custom-btn');
+let carousel = document.getElementById('customCarousel');
 
   carousel.addEventListener('slide.bs.carousel', function (e) {
     buttons.forEach(btn => btn.classList.remove('active'));
@@ -55,8 +55,9 @@ function renderData() {
 
 // View More click
 viewMoreBtn.addEventListener("click", () => {
-    showCount = allRecipes.length; // sab show
-    renderData();
+  window.location.href = "./menu.html"
 });
 
 fetchData();
+
+
