@@ -1,0 +1,61 @@
+.row{
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+}
+.name div input{
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 8px 20px;
+    border: 2px solid rgb(0, 3, 52);
+    border-radius: 12px;
+}
+.mail input{
+    margin-top: 10px;
+    margin-left: 25px;
+    padding: 8px 20px;
+    border: 2px solid rgb(0, 3, 52);
+    border-radius: 12px;
+}
+@media (min-width:425px) {
+    .mail input{
+        margin-left: 60px;
+    }
+}@media (min-width:767px) {
+    .mail input{
+        margin-left: 27px;
+    }
+}
+@media (min-width:1024px) {
+    .mail input{
+        margin-left: 60px;
+    }
+}
+.pass input{
+    margin-top: 10px;
+    margin-left: 30px;
+    padding: 8px 20px;
+    border: 2px solid rgb(0, 3, 52);
+    border-radius: 12px;
+}
+.number div input{
+    margin-top: 10px;
+    margin-left: 30px;
+    padding: 8px 20px;
+    border: 2px solid rgb(0, 3, 52);
+    border-radius: 12px;
+}
+div button{
+    text-align: center;
+    padding: 8px 25px;
+    border-radius: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    background-color: #ffce63;
+}
+div button:hover{
+    background: #e8a920;    
+}
