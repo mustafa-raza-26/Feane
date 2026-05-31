@@ -39,41 +39,62 @@
                   <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item icon">
-                            <a class="nav-link" href="./signup.html"><i class="fa-solid fa-user"></i></a>
+                            <a class="nav-link" href="./profile.html"><i class="fa-solid fa-user"></i></a>
                         </li>
                         <li class="nav-item icon">
                             <a class="nav-link" href="index.html"><i class="fa-solid fa-cart-shopping"></i></a>
                         </li>
-                        <li class="nav-item icon">
-                            <a class="nav-link" href="index.html"><i class="fa-solid fa-magnifying-glass"></i></a>
-                        </li>
                         <li class="nav-item butt">
-                            <a class="nav-link order" href="#">Order Online</a>
+                            <a class="nav-link order" id="check_status" href="#">Order Online</a>
                         </li>
                     </ul>
                   </div>
                 </div>
               </nav>
+              
+              
+              <div class="modal fade" id="loginModal" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
 
+                    <div class="modal-header">
+                      <h5 class="modal-title">Login Required</h5>
+
+                      <button 
+                        type="button" 
+                        class="btn-close" 
+                        data-bs-dismiss="modal">
+                      </button>
+                    </div>
+
+                    <div class="modal-body text-center">
+                      <a href="./signin.html" class="btn btn-primary">Login</a>
+                      <a href="./signup.html" class="btn btn-success">Signup</a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              
         <div id="customCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
           
           <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="head col-12 col-md-6"><h1>Fast Food Restaurant</h1></div>
                 <div class="text col-12 col-md-7"><p>Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.</p></div>
-                <div class="butt2 col-5 col-md-2 text-center">Order Online</div>
+                <div class="butt2 col-5 col-md-3 col-lg-2 text-center">Order Online</div>
             </div>
 
             <div class="carousel-item">
                 <div class="head col-12 col-md-6"><h1>Fast Food Restaurant</h1></div>
                 <div class="text col-12 col-md-7"><p>Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.</p></div>
-                <div class="butt2 col-5 col-md-2 text-center">Order Online</div>
+                <div class="butt2 col-5 col-md-3 col-lg-2 text-center">Order Online</div>
             </div>
 
             <div class="carousel-item">
                 <div class="head col-12 col-md-6"><h1>Fast Food Restaurant</h1></div>
                 <div class="text col-12 col-md-7"><p>Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.</p></div>
-                <div class="butt2 col-5 col-md-2 text-center">Order Online</div>
+                <div class="butt2 col-5 col-md-3 col-lg-2 text-center">Order Online</div>
             </div>
           </div>
 
@@ -206,7 +227,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="supabase.js"></script>
   <script src="app.js"></script>
-  <script src="menu.js"></script>
 </body>
 </html>

@@ -17,8 +17,7 @@ let showCount = 9;
 async function fetchData() {
     const API = await fetch('https://dummyjson.com/recipes');
     const data = await API.json();
-
-    allRecipes = data.recipes; // sab data store kar liya
+    allRecipes = data.recipes;
     renderData();
 }
 
@@ -38,7 +37,7 @@ function renderData() {
                 <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
                 <div class="d-flex justify-content-between pt-2">
                   <div>$20</div>
-                  <div><i class="fa-solid fa-cart-shopping cart"></i></div>
+                  <div class="card_Btn" id=${recipes.id} ><i class="fa-solid fa-cart-shopping cart" ></i></div>
                 </div>
               </div>
             </div>
@@ -51,7 +50,21 @@ function renderData() {
     } else {
         viewMoreBtn.style.display = "block";
     }
+    
+    display.addEventListener('click', (e) => {
+      
+    if (e.target.closest('.card_Btn')) {
+      let recipeId = Number(e.target.parentNode.id);
+      let dt  = (allRecipes[recipeId - 1]);
+      console.log(dt.name);
+      console.log(dt.image);
+      // console.log(dt.);
+          
+    }
+    });
+    
 }
+
 
 // View More click
 viewMoreBtn.addEventListener("click", () => {
@@ -60,4 +73,19 @@ viewMoreBtn.addEventListener("click", () => {
 
 fetchData();
 
+// status Check
+let check_status = document.getElementById('check_status')
+check_status.addEventListener('click', async () => {
+  
+  const { data, error } = await client.auth.getSession();
+  let session = data.session
+  console.log(session);
+  
+  const myModal = new bootstrap.Modal(document.getElementById('loginModal'));
+  if (session == null) {
+    myModal.show();
+  }else {
+    window.location.href = "./menu.html";
+  }
 
+})
